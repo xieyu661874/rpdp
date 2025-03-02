@@ -1,0 +1,10 @@
+experiments/datasets/fed_snli/iid_10/
+experiments/datasets/fed_cifar10/iid_10/
+experiments/datasets/fed_mnist/iid_10/
+experiments/datasets/fed_mnist/niid_10_5way_1200shot/
+experiments/datasets/fed_snli/iid_10/
+experiments/datasets/snli_1.0/
+.DS_Store
+experiments/datasets/fed_cifar10/dataset_creation_scripts/cifar10/*.tar.gz
+models--bert-base-cased/
+rpdp/experiments/datasets/
