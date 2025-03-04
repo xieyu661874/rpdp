@@ -80,8 +80,8 @@ class PrivCostEstimator:
         #func = lambda x, a, b, c: np.exp(a*x + b) + c
         #线性拟合
         #func = lambda x, m, b: m * x + b  # 线性关系
-        #func = lambda x, a, b, c: a * x**2 + b * x + c  # 二次拟合
-        func = lambda x, m, b, c, d: m * x**3 + b * x**2 + c * x + d  # 立方项线性函数
+        func = lambda x, a, b, c: a * x**2 + b * x + c  # 二次拟合
+        #func = lambda x, m, b, c, d: m * x**3 + b * x**2 + c * x + d  # 立方项线性函数
 
         #func = lambda x, m, b, c, d, e: m * x**4 + b * x**3 + c * x**2 + d * x + e  # 四次多项式函数
         popt, pcov = scipy.optimize.curve_fit(func, self.q_candidates, self.examples, maxfev=5000)
